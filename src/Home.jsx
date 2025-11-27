@@ -87,27 +87,38 @@ export default function Home() {
             textAlign: "center",
             background: "#ffffff",
             boxShadow: "0 10px 35px rgba(0,0,0,0.08)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
           }}
         >
-          <CheckCircleIcon
-            sx={{
-              fontSize: 80,
-              color: "#4CAF50",
-              mb: 2,
-              filter: "drop-shadow(0 4px 6px rgba(0,0,0,0.1))",
-            }}
-          />
+          <Box
+            sx={{ display: "flex", justifyContent: "center", width: "100%" }}
+          >
+            <CheckCircleIcon
+              sx={{
+                fontSize: 80,
+                color: "#4CAF50",
+                mb: 2,
+                filter: "drop-shadow(0 4px 6px rgba(0,0,0,0.1))",
+              }}
+            />
+          </Box>
 
-          <Avatar
-            src={avatar}
-            sx={{
-              width: 120,
-              height: 120,
-              mb: 2.5,
-              border: "4px solid #fff",
-              boxShadow: "0 6px 18px rgba(0,0,0,0.12)",
-            }}
-          />
+          <Box
+            sx={{ display: "flex", justifyContent: "center", width: "100%" }}
+          >
+            <Avatar
+              src={avatar}
+              sx={{
+                width: 120,
+                height: 120,
+                mb: 2.5,
+                border: "4px solid #fff",
+                boxShadow: "0 6px 18px rgba(0,0,0,0.12)",
+              }}
+            />
+          </Box>
 
           <Typography
             variant="h4"
@@ -136,7 +147,7 @@ export default function Home() {
               px: 4,
               py: 1.2,
               fontSize: "1rem",
-              borderRadius: 1,
+              borderRadius: 2,
               textTransform: "none",
               boxShadow: "0 4px 12px rgba(255,0,0,0.2)",
               "&:hover": {
